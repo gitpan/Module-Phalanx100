@@ -5,7 +5,8 @@ WriteMakefile
           'NAME' => 'Module::Phalanx100',
           'VERSION_FROM' => 'lib/Module/Phalanx100.pm',
           'PREREQ_PM' => {
-                           'Test::More' => '0'
+                           'Test::More' => '0',
+                           'Tie::IxHash' => '0'
                          },
           'INSTALLDIRS' => 'site',
           'PL_FILES' => {}

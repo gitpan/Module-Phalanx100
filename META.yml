@@ -1,16 +1,27 @@
 --- #YAML:1.0
 name: Module-Phalanx100
-version: 0.02
+version: 0.03
 author:
   - Robert Rothenberg <rrwo at cpan.org>
 abstract: list of Phalanx 100 modules
 license: perl
 requires:
+  Tie::IxHash: 0
   perl: 5.004
+recommends:
+  Archive::Tar: 0
+  Carp: 0
+  File::Copy: 0
+  File::Spec: 0
+  File::Temp: 0
+  IO::File: 0
+  LWP::Simple: 0
+  Parse::CPAN::Packages: 0
+  Sort::Versions: 0
 build_requires:
   Test::More: 0
 provides:
   Module::Phalanx100:
     file: lib/Module/Phalanx100.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.2607

@@ -4,25 +4,23 @@ NAME
 SYNOPSIS
       use Module::Phalanx100;
 
-      my @phalanx_dists = Module::Phalanx100->dists;
-
+      @dists = Module::Phalanx100->dists;
       if (Module::Phalanx100->dists('HTML-Parser')) {
         ...
       }
 
+      @mods  = Module::Phalanx100->modules();
+      $dist = Module::Phalanx100->modules('HTML::Parser');
+
 DESCRIPTION
-    This module returns a list of Phalanx 100 *distributions*, to be used
-    with other applications which need this information.
+    This module returns a list of Phalanx 100 distributions and modules, to
+    be used with other applications which need this information.
 
     This list comes from the Phalanx Project web site at
-    <http://qa.perl.org/phalanx>.
-
-    It does not handle distribution verson numbers, or recognize if modules
-    are part of a specific distribution (Parse::CPAN::Packages can assist
-    with that).
+    <http://qa.perl.org/phalanx> and Bundle::Phalanx100.
 
 SEE ALSO
-      Bundle::Phalanx
+      Bundle::Phalanx100
 
     The following modules provide additional CPAN meta-data:
 
