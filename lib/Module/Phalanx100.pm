@@ -26,6 +26,8 @@ can assist with that).
 
 =head1 SEE ALSO
 
+  Bundle::Phalanx
+
 The following modules provide additional CPAN meta-data:
 
   Module::CoreList
@@ -76,7 +78,7 @@ use strict;
 
 use vars qw($VERSION @PhalanxDists);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 @PhalanxDists = ( );
 
@@ -85,9 +87,7 @@ sub import {
   my $ver = shift || 0;
   die "incompatible version", if ($ver > $VERSION);
   while (my $line = <DATA>) {
-#    print STDERR $line;
-    die "wrong DATA" if ($line =~ /\*/);
-    chomp($line);
+    $line =~ s/\s+$//;
     push @PhalanxDists, $line if ($line);
   }
   die "no distros" unless (@PhalanxDists);

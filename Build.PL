@@ -10,7 +10,7 @@ my $build = Module::Build->new
      recommends => {
      },
      build_requires => {
-       'Test'                       => 0,
+       'Test::More'                => 0,
      },
      create_makefile_pl => 'traditional',
      create_readme      => 1,

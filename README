@@ -22,6 +22,8 @@ DESCRIPTION
     with that).
 
 SEE ALSO
+      Bundle::Phalanx
+
     The following modules provide additional CPAN meta-data:
 
       Module::CoreList

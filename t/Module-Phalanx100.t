@@ -1,15 +1,17 @@
 #!/usr/bin/perl
 
-use Test;
-BEGIN { plan tests => 4 };
-use Module::Phalanx100 0.01;
-ok(1);
+use Test::More tests => 3+146;
+
+use_ok('Module::Phalanx100', '0.02');
 
 my @dists = Module::Phalanx100->dists();
-ok(@dists);
-ok(@dists == 146);
+ok(@dists,        "dists != 0");
 
-ok(Module::Phalanx100->dists('YAML'));
+ok(!Module::Phalanx100->dists('Foo::Bar::Bo::Baz'));
+
+foreach my $d (@dists) {
+  ok(Module::Phalanx100->dists($d), "$d");
+}
 
 __DATA__
-*
+Foo::Bar::Bo::Baz
