@@ -112,7 +112,7 @@ use vars qw($VERSION %PhalanxDists %PhalanxModules);
 
 use Tie::IxHash;
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 %PhalanxDists   = ( );
 %PhalanxModules = ( );
@@ -158,6 +158,8 @@ sub modules {
 
 
 1;
+
+# TODO - make this mod_perl friendly by moving away from data blocks?
 
 __DATA__
 Test::Harness	Test-Harness

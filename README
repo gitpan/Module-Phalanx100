@@ -56,17 +56,9 @@ DESCRIPTION
 REVISION HISTORY
     The following changes have been made since the last public release:
 
-    0.04  Thu Mar 31 2005
-	- updated README
-	- updated to use Bundle::Phalanx100 v0.07
-	- bug fix for update-list.pl script
-	- added stub POD to update-list script
-        - tweaks to Build.PL
-	- added Test::Prereq test
-        - added Test::Pod test
-	- added Pod::Coverage test
-	- added DSLIP information to documentation
-	- minor documentation changes
+    0.05  Mon Apr  4 2005
+	- corrected bug in Pod::Coverage tests
+	- minor code tweaks
 
     More details of the revision history can be found in the Changes file
     included with this distribution.

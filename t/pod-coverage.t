@@ -7,4 +7,4 @@ eval "use Pod::Coverage";
 
 plan skip_all => "Pod::Coverage required" if $@;
 
-ok( Pod::Coverage->new( package => 'Module::Phalanx100' ) );
+ok( Pod::Coverage->new( package => 'Module::Phalanx100' )->coverage == 1 );

@@ -1,5 +1,9 @@
 Revision history for Perl extension Module::Phalanx100.
 
+0.05  Mon Apr  4 2005
+	- corrected bug in Pod::Coverage tests
+	- minor code tweaks
+
 0.04  Thu Mar 31 2005
 	- updated README
 	- updated to use Bundle::Phalanx100 v0.07
