@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Module-Phalanx100
-version: 0.03
+version: 0.04
 author:
   - Robert Rothenberg <rrwo at cpan.org>
 abstract: list of Phalanx 100 modules
@@ -13,15 +13,17 @@ recommends:
   Carp: 0
   File::Copy: 0
   File::Spec: 0
-  File::Temp: 0
   IO::File: 0
   LWP::Simple: 0
   Parse::CPAN::Packages: 0
+  Pod::Coverage: 0
   Sort::Versions: 0
+  Test::Pod: 1
+  Test::Prereq: 0
 build_requires:
   Test::More: 0
 provides:
   Module::Phalanx100:
     file: lib/Module/Phalanx100.pm
-    version: 0.03
+    version: 0.04
 generated_by: Module::Build version 0.2607

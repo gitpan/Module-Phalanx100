@@ -3,7 +3,7 @@
 use Test::More tests => 305;
 use strict;
 
-use_ok('Module::Phalanx100', '0.03');
+use_ok('Module::Phalanx100', '0.04');
 
 my @dists = Module::Phalanx100->dists();
 ok(@dists > 100, "dists != 0");

@@ -1,7 +1,40 @@
 #!/usr/bin/perl
 
-# This is a prototype script to update Module::Phalanx100 from the
-# list in Bundle::Phalanx100.  Use at your own risk!
+=pod
+
+=head1 NAME
+
+update-list.pl - Update Module::Phalanx100.pm list from Bundle::Phalanx100
+
+=head1 SYNOPSIS
+
+  # from shell
+
+  cd scripts
+  perl update-list.pl
+
+=head1 DESCRIPTION
+
+This script downloads the latest non-developer release of Bundle::Phalanx100
+and uses the information to update the copy of Module::Phalanx100.
+
+=head1 CAVEATS
+
+This is a prototype module. Use it at your own risk!
+
+=head1 AUTHOR
+
+Robert Rothenberg <rrwo at cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2005 by Robert Rothenberg
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.6 or,
+at your option, any later version of Perl 5 you may have available.
+
+=cut
 
 require 5.006;
 
@@ -16,16 +49,16 @@ use Archive::Tar;
 use Carp;
 use File::Copy;
 use File::Spec;
-use File::Temp   'tempdir';
+# use File::Temp   'tempdir';
 use IO::File;
 use LWP::Simple;
 use Parse::CPAN::Packages;
 use Sort::Versions;
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 $VERSION = eval $VERSION;
 
-my $WorkPath = tempdir( CLEANUP => 1 );
+my $WorkPath = '.' ; # tempdir( CLEANUP => 1 );
 my $ModList  = File::Spec->catfile($WorkPath, PACKAGES_FILE);
 
 {
@@ -42,7 +75,7 @@ my $Packages = Parse::CPAN::Packages->new($ModList);
 # releases do not show up in the bundle, so we use the default latest
 # release.
 
-my $Latest   = "S/SM/SMPETERS/Bundle-Phalanx-0.06_02.tar.gz";
+my $Latest   = "S/SM/SMPETERS/Bundle-Phalanx-0.07.tar.gz";
 
 my $Bundle = $Packages->latest_distribution("Bundle-Phalanx");
 unless ($Bundle) {

@@ -5,6 +5,9 @@ MANIFEST
 META.yml
 README
 t/Module-Phalanx100.t
+t/pod.t
+t/pod-coverage.t
+t/prereqs.t
 lib/Module/Phalanx100.pm
 scripts/update-list.pl
 SIGNATURE    Added here by Module::Build

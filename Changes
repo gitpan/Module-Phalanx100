@@ -1,5 +1,17 @@
 Revision history for Perl extension Module::Phalanx100.
 
+0.04  Thu Mar 31 2005
+	- updated README
+	- updated to use Bundle::Phalanx100 v0.07
+	- bug fix for update-list.pl script
+	- added stub POD to update-list script
+        - tweaks to Build.PL
+	- added Test::Prereq test
+        - added Test::Pod test
+	- added Pod::Coverage test
+	- added DSLIP information to documentation
+	- minor documentation changes
+
 0.03  Mon Mar 21 21:45:00 2005
 	- data imported from Bundle::Phalanx100
 	- includes script to import data
