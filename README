@@ -1,0 +1,55 @@
+NAME
+    Module::Phalanx100 - list of Phalanx 100 modules
+
+SYNOPSIS
+      use Module::Phalanx100;
+
+      my @phalanx_dists = Module::Phalanx100->dists;
+
+      if (Module::Phalanx100->dists('HTML-Parser')) {
+        ...
+      }
+
+DESCRIPTION
+    This module returns a list of Phalanx 100 *distributions*, to be used
+    with other applications which need this information.
+
+    This list comes from the Phalanx Project web site at
+    <http://qa.perl.org/phalanx>.
+
+    It does not handle distribution verson numbers, or recognize if modules
+    are part of a specific distribution (Parse::CPAN::Packages can assist
+    with that).
+
+SEE ALSO
+    The following modules provide additional CPAN meta-data:
+
+      Module::CoreList
+      Parse::CPAN::Packages
+
+    The following modules provide dependency information:
+
+      CPAN::Unwind
+      Module::Info
+      Module::Dependency
+      Module::Depends
+      Module::MakefilePL::Parse
+      Module::PrintUsed
+      Module::ScanDeps
+
+    Additional information can be found at the following web sites:
+
+    *   The Phalanx Project <http://qa.perl.org/phalanx>
+
+    *   CPANTS Testing Service <http://cpants.dev.zsi.at>
+
+AUTHOR
+    Robert Rothenberg <rrwo at cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright (C) 2005 by Robert Rothenberg
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself, either Perl version 5.8.6 or, at
+    your option, any later version of Perl 5 you may have available.
+

@@ -1,0 +1,16 @@
+--- #YAML:1.0
+name: Module-Phalanx100
+version: 0.01
+author:
+  - Robert Rothenberg <rrwo at cpan.org>
+abstract: list of Phalanx 100 modules
+license: perl
+requires:
+  perl: 5.004
+build_requires:
+  Test: 0
+provides:
+  Module::Phalanx100:
+    file: lib/Module/Phalanx100.pm
+    version: 0.01
+generated_by: Module::Build version 0.2607

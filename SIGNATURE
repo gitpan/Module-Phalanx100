@@ -1,0 +1,31 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.44.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 cc1b795c91bade9350854144f35007ba6f49a4db Build.PL
+SHA1 aef5797da452cab6f92dc4c3dc428fcf77e5043f Changes
+SHA1 a2d4f7eb645f7040d0fb48441cdeefd5eaa9f481 MANIFEST
+SHA1 af05a07ff991690f2b4b80899ff446b9ccc17f82 META.yml
+SHA1 d02b3e3b2faf598c936312585a20554a8fd4ef66 Makefile.PL
+SHA1 304d419accac5d4607d5fb1e545ec24057fef5aa README
+SHA1 2b4c6aa531839478b639b9b26a8ce97032566b17 lib/Module/Phalanx100.pm
+SHA1 a8a97f7880980f0d5ff0d99799173c3a77d1c6d5 t/Module-Phalanx100.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.5 (MingW32)
+
+iD8DBQFCPfMqV485gMKcmRARAp4ZAKCNfvDGkc3v570GZgRx28AlAsa3fgCgmjRM
+3aK9eZLVAtXyO/61D+mIv/8=
+=BnWE
+-----END PGP SIGNATURE-----

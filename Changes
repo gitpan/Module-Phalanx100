@@ -1,0 +1,6 @@
+Revision history for Perl extension Module::Phalanx100.
+
+0.01  Sun Mar 20 20:37:19 2005
+	- original version; created by h2xs 1.23 with options
+		-b 5.4.0 -v 0.01 -n Module::Phalanx100 -X
+
